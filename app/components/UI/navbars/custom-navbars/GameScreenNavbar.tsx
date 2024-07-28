@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
 import { ArrowLeft, ChevronDown, UserRound } from 'lucide-react'
+import Navbar from '../Navbar'
 
 const GameScreenNavbar = () => {
     return (

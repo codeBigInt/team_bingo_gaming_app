@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import logo from './asset/bingo_logo.png'
-import bell from './asset/notification-bing.png'
-import user from './asset/user.png'
+import logo from '../asset/bingo_logo.png'
+import bell from '../asset/notification-bing.png'
+import user from '../asset/user.png'
 import { ChevronDown, Menu, UserRound } from 'lucide-react'
-import Navbar from './Navbar'
+import Navbar from '../Navbar'
 
 
 const CountDownNavbar = () => {

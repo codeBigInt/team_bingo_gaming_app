@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import logo from './asset/bingo_logo.png'
-import user from './asset/user.png'
+import logo from '../asset/bingo_logo.png'
+import user from '../asset/user.png'
 import Navbar from '../Navbar'
 
 type ForgotPasswordNavbarProps = {
