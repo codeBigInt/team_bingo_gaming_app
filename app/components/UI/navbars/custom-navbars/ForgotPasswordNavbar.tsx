@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import logo from './asset/bingo_logo.png'
 import user from './asset/user.png'
+import Navbar from '../Navbar'
 
 type ForgotPasswordNavbarProps = {
     className?: string,
@@ -11,11 +12,11 @@ type ForgotPasswordNavbarProps = {
 const ForgotPasswordNavbar = ({ className }: ForgotPasswordNavbarProps) => {
     return (
         <div className='w-full'>
-            <nav className={`${className} md:flex hidden items-center gap-6 w-full md:px-20 px-6 py-6 bg-[#fffdfd]`}>
+            <Navbar className={`${className} md:flex hidden items-center gap-6 w-full md:px-20 px-6 py-6 bg-[#fffdfd]`}>
                 <span className='text-[#2196F3]'>How to play</span>
                 <button>Login</button>
-            </nav>
-            <nav className='flex md:hidden items-center justify-between w-full bg-[#fffdfd] px-6 md:px-20 py-6'>
+            </Navbar>
+            <Navbar className='flex md:hidden items-center justify-between w-full bg-[#fffdfd] px-6 md:px-20 py-6'>
                 <div className='flex md:hidden'>
                     <Image src={user} alt='user' />
                 </div>
@@ -26,7 +27,7 @@ const ForgotPasswordNavbar = ({ className }: ForgotPasswordNavbarProps) => {
                     <p className='text-[#2196F3] hidden md:flex'>How to play</p>
                     <button>Login</button>
                 </div>
-            </nav>
+            </Navbar>
         </div>
 
     )

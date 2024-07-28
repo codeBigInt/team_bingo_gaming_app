@@ -2,12 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import logo from './asset/bingo_logo.png'
 import user from './asset/user.png'
+import Navbar from './Navbar'
 
 
 const SignUpNavbar = () => {
   
   return (
-    <nav className='flex items-center justify-between w-full bg-[#fffdfd] px-6 md:px-20 py-6'>
+    <Navbar className='justify-between'>
       <div className='flex md:hidden'>
         <Image src={user} alt='user' />
       </div>
@@ -18,7 +19,7 @@ const SignUpNavbar = () => {
        <p className='text-[#2196F3] hidden md:flex'>How to play</p>
        <button>Login</button>
       </div>
-    </nav>
+    </Navbar>
   )
 }
 

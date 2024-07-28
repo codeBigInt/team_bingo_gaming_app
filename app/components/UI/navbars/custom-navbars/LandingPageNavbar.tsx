@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import logo from './asset/bingo_logo.png'
 import user from './asset/user.png'
+import Navbar from './Navbar'
 
 
 const LandingPageNavbar = () => {
     return (
-        <nav className='flex items-center justify-between w-full bg-[#fffdfd] px-6 md:px-20 py-6'>
+        <Navbar className='justify-between'>
             <div className='flex md:hidden'>
                 <Image src={user} alt='user' />
             </div>
@@ -16,11 +17,11 @@ const LandingPageNavbar = () => {
             <div className='flex gap-6 items-center'>
                 <p className='text-[#2196F3] hidden md:flex'>How to play</p>
                 <div className='flex gap-4 items-center'>
-                    <button>Login</button>
-                    <button>Signup</button>
+                    <button className='bg-[#FAD02C] text-white py-2 px-4 rounded-[8px]'>Login</button>
+                    <button className='bg-[#00658B] text-white py-2 px-4 rounded-[8px]'>Signup</button>
                 </div>
             </div>
-        </nav>
+        </Navbar>
     )
 }
 
