@@ -3,7 +3,7 @@ import React from 'react'
 const justTesting = () => {
     return (
         <div>
-            Team Bingo is working!
+            Team Bingo 
         </div>
     )
 }
